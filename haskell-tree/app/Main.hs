@@ -23,9 +23,9 @@ consoleInterface tree = do
         1 -> do
             didFindValue <- handleSearch tree
             if didFindValue == True then
-                putStrLn "Success"
+                putStrLn "It's in here"
             else
-                putStrLn "Failure"
+                putStrLn "Didn't find it"
             consoleInterface tree
         2 -> do
             treeAfterInsert <- handleInsert tree
